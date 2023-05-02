@@ -2,3 +2,9 @@ name: testing workflow
 on:
   push:
     branches: test2
+
+jobs:
+  test_job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'hi'
